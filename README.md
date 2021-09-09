@@ -1,5 +1,4 @@
 # AxVSPRoomSeg3D
-AxVSPRoomSeg3D
 
 AxVSPRoomSeg3D is a three-dimensional room segmentation method.
 
@@ -24,4 +23,9 @@ or
 
 set parameters in config file "configTraj.ini", then run the program AxVSPRoomSeg3DTraj.exe, the point cloud should named "scan1.txt"
 
-Acknowledgments: The authors acknowledge the authors of papers "VDB-EDT: An Efficient Euclidean Distance Transform Algorithm Based on VDB Data Structure" and their open source project in https://github.com/zhudelong/VDB-EDT.git.
+#### Acknowledgments 
+
+The authors give special acknowledgement to Zhu, D. [35] for the implementation of VDB-EDT algorithm. Their open source project is available on https://github.com/zhudelong/VDB-EDT.git.
+
+
+1.	Zhu, D.; Wang, C.; Wang, W.; Garg, R.; Scherer, S.; Meng, M.Q.-H. VDB-EDT: An Efficient Euclidean Distance Transform Algorithm Based on VDB Data Structure. 2021.
