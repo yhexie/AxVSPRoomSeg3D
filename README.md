@@ -6,11 +6,7 @@ AxVSPRoomSeg3D is a three-dimensional room segmentation method.
 
 Visual Studio 2015 Update3
 
-OpenVDB 6.0.0
-
-PCL 1.8.1
-
-Boost 1.74
+OpenVDB 6.0.0, PCL 1.8.1, Boost 1.74
 
 #### Usage
 
@@ -18,7 +14,8 @@ The program AxVSPRoomSeg3DPose.exe is for TLS scans. Each frame of the scanned p
 The program AxVSPRoomSeg3DTraj.exe is for IMLS point cloud. The dataset consist of point cloud, corresponding trajectory information and timestamps. The datasets were pre-processed by align the coordinate points and trajectory with timestamps.
 
 First, set parameters in config file "configPos.ini", then run the program AxVSPRoomSeg3DPose.exe, the scans should formated as "scan1.pcd, scan2.pcd，..., scan250.pcd"
-（example D:\AxVSPRoomSeg3D\data\A1apartment1\scan1.pcd）
+（for example D:\AxVSPRoomSeg3D\data\A1apartment1\scan1.pcd）
+
 or
 
 set parameters in config file "configTraj.ini", then run the program AxVSPRoomSeg3DTraj.exe, the point cloud should named "scan1.txt"
