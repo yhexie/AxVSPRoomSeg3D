@@ -152,9 +152,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="..\shapelib-1.3.0\shapefil.h" />
     <ClInclude Include="AxConfiguration.h" />
     <ClInclude Include="AxDistCell.h" />

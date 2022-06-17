@@ -180,15 +180,7 @@ int AxInnerSphereGraphTraj::doEDT()
 			}
 		}
 	}
-
 	grid_distance_transform->update();
-	std::string vdbFilename, imgFilename, gridName;
-	vdbFilename = "something.vdb";
-	openvdb::io::File file(vdbFilename);
-	openvdb::GridPtrVec grids;
-	grids.push_back(grid_logocc_);
-	file.write(grids);
-	file.close();
 	//保存结果------------------------------------------
 	pcl_edt_cloud.reset(new pcl::PointCloud<pcl::PointXYZI>);
 	for (int x = coor_min.x(); x <= coor_max.x(); ++x) {
@@ -212,6 +204,22 @@ int AxInnerSphereGraphTraj::doEDT()
 			}// end z loop
 		} // end y loop
 	} // end x loop
+
+	std::string vdbFilename, edtFilename, gridName;
+	vdbFilename = "something.vdb";
+	openvdb::io::File file(vdbFilename);
+	openvdb::GridPtrVec grids;
+	grids.push_back(grid_logocc_);//占用概率
+	file.write(grids);
+	file.close();
+
+	edtFilename = "edt.vdb";
+	openvdb::io::File fileedt(edtFilename);
+	openvdb::GridPtrVec grids2;
+	grids2.push_back(grid_dist_map);//距离变换
+	fileedt.write(grids2);
+	fileedt.close();
+
 	if (pcl_edt_cloud->points.size() > 0)
 	{
 		std::string filename3 = "saveEDTIntensity.pcd";
