@@ -1,6 +1,8 @@
 # AxVSPRoomSeg3D
 
-AxVSPRoomSeg3D is a three-dimensional room segmentation method.
+AxVSPRoomSeg3D is a three-dimensional room segmentation method. If you like our work and feel it helpful. Please cite our work:
+
+Yang F, Che M, Zuo X, Li L, Zhang J, Zhang C. Volumetric Representation and Sphere Packing of Indoor Space for Three-Dimensional Room Segmentation. ISPRS International Journal of Geo-Information. 2021; 10(11):739. https://doi.org/10.3390/ijgi10110739
 
 #### Development
 
