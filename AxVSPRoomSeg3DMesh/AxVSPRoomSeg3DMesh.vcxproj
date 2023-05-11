@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{73f72837-b47e-4c34-a062-05a0a581d219}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>AxVSPRoomSeg3DMesh</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>AxVSPRoomSeg3DMesh</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\sdkvc14\PCL\include\pcl-1.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\sdkvc14\PCL\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>pcl_segmentation_debug.lib;pcl_features_debug.lib;pcl_filters_debug.lib;pcl_search_debug.lib;pcl_octree_debug.lib;pcl_sample_consensus_debug.lib;pcl_ml_debug.lib;pcl_kdtree_debug.lib;pcl_io_debug.lib;pcl_common_debug.lib;pcl_io_ply_debug.lib;pcl_surface_debug.lib;libboost_system-vc140-mt-gd-1_74.lib;libboost_filesystem-vc140-mt-gd-1_74.lib;libboost_thread-vc140-mt-gd-1_74.lib;libboost_date_time-vc140-mt-gd-1_74.lib;libboost_iostreams-vc140-mt-gd-1_74.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;OPENVDB_3_ABI_COMPATIBLE;BOOST_ALL_NO_LIB;NOMINMAX;OPENEXR_DLL;OPENVDB_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\sdkvc14\PCL\include\pcl-1.8;C:\sdkvc14\boost_1_74_0;C:\sdkvc14\boost_1_74_0\boost;C:\sdkvc14\eigen-3.3.9;C:\sdkvc14\OpenVDB\include;C:\sdkvc14\OpenEXRMetaProject\include;C:\sdkvc14\tbb20180618\tbb2018_20180618oss\include;C:\sdkvc14\flann1.9.1\include;D:\CodeWork\ax-inner-sphere3d\shapelib-1.3.0;C:\sdkvc14\VTK8.2\include;C:\sdkvc14\VTK8.2\include\vtk-8.2</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\sdkvc14\PCL\lib;C:\sdkvc14\flann1.9.1\lib;C:\sdkvc14\boost_1_74_0;C:\sdkvc14\boost_1_74_0\lib64-msvc-14.0;C:\sdkvc14\OpenVDB\lib;C:\sdkvc14\OpenEXRMetaProject\lib;C:\sdkvc14\tbb20180618\tbb2018_20180618oss\lib\intel64\vc14;C:\sdkvc14\VTK8.2\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>pcl_segmentation_debug.lib;pcl_features_debug.lib;pcl_filters_debug.lib;pcl_search_debug.lib;pcl_octree_debug.lib;pcl_sample_consensus_debug.lib;pcl_ml_debug.lib;pcl_kdtree_debug.lib;pcl_io_debug.lib;pcl_common_debug.lib;pcl_io_ply_debug.lib;pcl_surface_debug.lib;boost_system-vc140-mt-gd-x64-1_74.lib;boost_filesystem-vc140-mt-gd-x64-1_74.lib;boost_chrono-vc140-mt-gd-x64-1_74.lib;boost_thread-vc140-mt-gd-x64-1_74.lib;boost_date_time-vc140-mt-gd-x64-1_74.lib;boost_iostreams-vc140-mt-gd-x64-1_74.lib;Half-2_4_d.lib;openvdb_d.lib;libopenvdb_d.lib;tbb_debug.lib;flann_debug.lib;vtkCommonCore-8.2_d.lib;vtkIOCore-8.2_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;OPENVDB_3_ABI_COMPATIBLE;BOOST_ALL_NO_LIB;NOMINMAX;OPENEXR_DLL;OPENVDB_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\sdkvc14\PCL\include\pcl-1.8;C:\sdkvc14\boost_1_74_0;C:\sdkvc14\boost_1_74_0\boost;C:\sdkvc14\eigen-3.3.9;C:\sdkvc14\OpenVDB\include;C:\sdkvc14\OpenEXRMetaProject\include;C:\sdkvc14\tbb20180618\tbb2018_20180618oss\include;C:\sdkvc14\flann1.9.1\include;D:\CodeWork\ax-inner-sphere3d\shapelib-1.3.0;C:\sdkvc14\VTK8.2\include;C:\sdkvc14\VTK8.2\include\vtk-8.2</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\sdkvc14\PCL\lib;C:\sdkvc14\flann1.9.1\lib;C:\sdkvc14\boost_1_74_0;C:\sdkvc14\boost_1_74_0\lib64-msvc-14.0;C:\sdkvc14\OpenVDB\lib;C:\sdkvc14\OpenEXRMetaProject\lib;C:\sdkvc14\tbb20180618\tbb2018_20180618oss\lib\intel64\vc14;C:\sdkvc14\VTK8.2\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>pcl_segmentation_release.lib;pcl_features_release.lib;pcl_filters_release.lib;pcl_search_release.lib;pcl_octree_release.lib;pcl_sample_consensus_release.lib;pcl_ml_release.lib;pcl_kdtree_release.lib;pcl_io_release.lib;pcl_common_release.lib;pcl_io_ply_release.lib;pcl_surface_release.lib;boost_system-vc140-mt-gd-x64-1_74.lib;boost_filesystem-vc140-mt-x64-1_74.lib;boost_chrono-vc140-mt-x64-1_74.lib;boost_thread-vc140-mt-x64-1_74.lib;boost_date_time-vc140-mt-x64-1_74.lib;boost_iostreams-vc140-mt-x64-1_74.lib;Half-2_4.lib;openvdb.lib;libopenvdb.lib;tbb.lib;flann.lib;vtkCommonCore-8.2.lib;vtkIOCore-8.2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shapelib-1.3.0\shapefil.h" />
+    <ClInclude Include="AxConfiguration.h" />
+    <ClInclude Include="AxDistCell.h" />
+    <ClInclude Include="AxVSPRoomSeg3DMesh.h" />
+    <ClInclude Include="AxRoom3d.h" />
+    <ClInclude Include="bucketedqueue.h" />
+    <ClInclude Include="bucketedqueue.hxx" />
+    <ClInclude Include="datacell.h" />
+    <ClInclude Include="dynamicVDBEDT.h" />
+    <ClInclude Include="ini.h" />
+    <ClInclude Include="point.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="utility.h" />
+    <ClInclude Include="utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\shapelib-1.3.0\dbfopen.c" />
+    <ClCompile Include="..\shapelib-1.3.0\safileio.c" />
+    <ClCompile Include="..\shapelib-1.3.0\shpopen.c" />
+    <ClCompile Include="..\shapelib-1.3.0\shptree.c" />
+    <ClCompile Include="AxDistCell.cpp" />
+    <ClCompile Include="AxRoom3d.cpp" />
+    <ClCompile Include="ini.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="AxVSPRoomSeg3DMesh.cpp" />
+    <ClCompile Include="dynamicVDBEDT.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="configMesh.ini" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
