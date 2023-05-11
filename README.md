@@ -4,6 +4,8 @@ AxVSPRoomSeg3D is a three-dimensional room segmentation method. If you like our 
 
 Yang F, Che M, Zuo X, Li L, Zhang J, Zhang C. Volumetric Representation and Sphere Packing of Indoor Space for Three-Dimensional Room Segmentation. ISPRS International Journal of Geo-Information. 2021; 10(11):739. https://doi.org/10.3390/ijgi10110739
 
+Yang, F.; Li, Y.; Che, M.; Wang, S.; Wang, Y.; Zhang, J.; Cao, X.; Zhang, C. The Polygonal 3D Layout Reconstruction of an Indoor Environment via Voxel-Based Room Segmentation and Space Partition. ISPRS Int. J. Geo-Inf. 2022, 11, 530. https://doi.org/10.3390/ijgi11100530
+
 #### Development
 
 Visual Studio 2015 Update3
@@ -21,6 +23,8 @@ First, set parameters in config file "configPos.ini", then run the program AxVSP
 or
 
 set parameters in config file "configTraj.ini", then run the program AxVSPRoomSeg3DTraj.exe, the point cloud should named "scan1.txt"
+
+the mesh format is "*.obj".
 
 #### Acknowledgments 
 
